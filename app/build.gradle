@@ -21,6 +21,9 @@ android {
     buildTypes.each {
         it.buildConfigField 'String', 'FIREBASE_DATABASE_URL', firebaseDatabaseUrl
         it.buildConfigField 'String', 'FIREBASE_STORAGE_URL', firebaseStorageUrl
+        it.buildConfigField 'String', 'GOOGLE_WEB_CLIENT_ID', googleWebClientId
+        it.resValue 'string', 'FACEBOOK_APP_ID', facebookAppId
+
     }
 }
 
@@ -32,10 +35,15 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:design:23.4.0'
 
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.facebook.android:facebook-android-sdk:4.+'
+
     compile 'com.google.firebase:firebase-core:9.6.1'
     compile 'com.google.firebase:firebase-auth:9.6.1'
+    compile 'com.google.android.gms:play-services-auth:9.6.1'
 
-    testCompile 'junit:junit:4.12'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
 }
 
 apply plugin: 'com.google.gms.google-services'
