@@ -10,6 +10,5 @@ public class Constants {
 
     public static final String FIREBASE_DATABASE_URL = BuildConfig.FIREBASE_DATABASE_URL;
     public static final String FIREBASE_STORAGE_URL = BuildConfig.FIREBASE_STORAGE_URL;
-    public static final String GOOGLE_OAUTH_KEY = BuildConfig.GOOGLE_OAUTH_KEY;
     public static final String GOOGLE_WEB_CLIENT_ID = BuildConfig.GOOGLE_WEB_CLIENT_ID;
 }
